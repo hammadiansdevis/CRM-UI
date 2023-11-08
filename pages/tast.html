@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="all.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Poppins:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  <title>Tasks</title>
+</head>
+
+<body>
+  <div class="flex gap-5">
+    <div class="px-5 bg-white border-2 border-[F5F5F7] shadow-md w-[222px] h-[1024px]">
+      <div class="flex gap-5 pb-12 pt-5">
+        <div>
+          <img src="./assets/images/Vector.png" alt="Vector">
+        </div>
+        <div class="text-[#141522] text-3xl font-semibold cursor-pointer">
+          <h2>Nuegas</h2>
+        </div>
+      </div>
+      <div class="flex flex-col gap-6 pb-40">
+        <div class="flex gap-3 hover:bg-[#F5F5F7] w-[170px] h-[42px] pt-2 pl-3 rounded-lg">
+          <div>
+            <img src="./assets/images/1.svg" alt="1.svg">
+          </div>
+          <a href="http://127.0.0.1:5500/index.html">
+            <div class="text-[#8E92BC] hover:text-[#141522] text-sm font-semibold cursor-pointer">
+              <h2>Overview</h2>
+            </div>
+          </a>
+        </div>
+        <div class="flex gap-3 pl-3 hover:bg-[#F5F5F7] w-[170px] h-[42px] pt-2 pl-3 rounded-lg">
+          <div>
+            <img src="./assets/images/2.svg" alt="1.svg">
+          </div>
+          <a href="http://127.0.0.1:5500/pages/tast.html">
+            <div class="text-[#8E92BC] hover:text-[#141522] text-sm cursor-pointer">
+              <h2>Task</h2>
+            </div>
+          </a>
+        </div>
+        <div class="flex gap-3 pl-3 hover:bg-[#F5F5F7] w-[170px] h-[42px] pt-2 pl-3 rounded-lg">
+          <div>
+            <img src="./assets/images/3.svg" alt="1.svg">
+          </div>
+          <a href="http://127.0.0.1:5500/pages/mentors.html">
+            <div class="text-[#8E92BC] hover:text-[#141522] text-sm cursor-pointer">
+              <h2>Mentors</h2>
+            </div>
+          </a>
+        </div>
+        <div class="flex gap-3 pl-3 hover:bg-[#F5F5F7] w-[170px] h-[42px] pt-2 pl-3 rounded-lg">
+          <div>
+            <img src="./assets/images/4.svg" alt="1.svg">
+          </div>
+          <a href="http://127.0.0.1:5500/pages/messages.html">
+            <div class="text-[#8E92BC] hover:text-[#141522] text-sm cursor-pointer">
+              <h2>Message</h2>
+            </div>
+          </a>
+        </div>
+        <div class="flex gap-3 pl-3 hover:bg-[#F5F5F7] w-[170px] h-[42px] pt-2 pl-3 rounded-lg">
+          <div>
+            <img src="./assets/images/5.svg" alt="1.svg">
+          </div>
+          <div class="text-[#8E92BC] hover:text-[#141522] text-sm cursor-pointer">
+            <h2>Settings</h2>
+          </div>
+        </div>
+      </div>
+      <div class="cursor-pointer pt-36">
+        <img src="./assets/images/Help Center.png" alt="Help Center">
+      </div>
+    </div>
+    <div class="mt-10">
+      <div class="flex justify-between mx-10">
+        <h1 class="text-2xl font-semibold text-[#141522]">Explore Task</h1>
+        <div class="flex gap-5">
+          <img src="./assets/images/notif.png" alt="Notification" />
+          <img src="./assets/images/Profil.png" alt="profile" />
+        </div>
+      </div>
+      <div class="flex justify-between mx-10 my-5">
+        <div class="relative w-96 border-2 border-solid border-[#F5F5F7] rounded-xl">
+          <input type="text" id="voice-search" class="text-[#54577A] text-sm rounded-lg p-3" placeholder="Search Task"
+            required />
+          <button type="button" class="absolute inset-y-0 right-0 flex items-center pr-3">
+            <i class="fa-solid fa-magnifying-glass" style="color: #8e92bc"></i>
+          </button>
+        </div>
+        <div class="flex gap-5">
+          <div
+            class="border-2 border-solid border-[#F5F5F7] rounded-xl w-32 flex gap-2 justify-center py-2 items-center">
+            <img src="./assets/images/category-2.svg" alt="Category" />
+            <p class="text-xs font-semibold">Category</p>
+          </div>
+          <div
+            class="border-2 border-solid border-[#F5F5F7] rounded-xl w-44 flex gap-2 justify-center py-2 items-center">
+            <img src="./assets/images/sort.svg" alt="sort" />
+            <p class="text-xs font-semibold">Sort By : Deadline</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col gap-10 mx-10">
+        <div>
+          <div class="flex justify-between">
+            <h2 class="text-2xl font-semibold text-[#141522]">Time Limit</h2>
+            <div class="flex gap-3">
+              <img src="./assets/images/arrow-left.svg" alt="icon" />
+              <img src="./assets/images/arrow-right.svg" alt="icon" />
+            </div>
+          </div>
+        </div>
+        <div class="flex gap-20">
+          <div class="flex flex-col gap-2">
+            <div class="flex flex-col gap-2">
+              <div>
+                <img src="./assets/images/Image.png" alt="image" />
+              </div>
+              <div>
+                <h3 class="text-base font-semibold text-[#141522]">
+                  Creating Awesome Mobile Apps
+                </h3>
+                <p class="text-xs font-medium text-[#54577A]">UI UX Design</p>
+              </div>
+            </div>
+            <div>
+              <div class="flex gap-40">
+                <h3 class="text-base font-medium text-[#141522]">Progress</h3>
+                <p class="percentage text-base font-medium text-blue-600"></p>
+              </div>
+
+              <div class="w-[275px] bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 relative">
+                <div id="movable-progress" class="bg-blue-600 h-2.5 rounded-full absolute left-0" style="width: 45%">
+                </div>
+              </div>
+              <script>
+                const movableProgress =
+                  document.getElementById("movable-progress");
+                const percentageText = document.querySelector(".percentage");
+
+                let isDragging = false;
+
+                // Retrieve the stored progress percentage from local storage, if available
+                const storedPercentage =
+                  localStorage.getItem("progressPercentage");
+                if (storedPercentage !== null) {
+                  movableProgress.style.width = `${storedPercentage}%`;
+                  percentageText.textContent = `${Math.round(
+                    storedPercentage
+                  )}%`;
+                }
+                movableProgress.addEventListener("mousedown", (e) => {
+                  isDragging = true;
+                  movableProgress.style.transition = "none";
+
+                  document.addEventListener("mousemove", moveProgressBar);
+                  document.addEventListener("mouseup", stopDragging);
+                });
+
+                function moveProgressBar(e) {
+                  if (isDragging) {
+                    const progressBarRect =
+                      movableProgress.parentElement.getBoundingClientRect();
+                    const mouseX = e.clientX - progressBarRect.left;
+                    const progressBarWidth = progressBarRect.width;
+
+                    const progressPercentage =
+                      (mouseX / progressBarWidth) * 100;
+
+                    // Clamp the progress percentage between 0% and 100%
+                    const clampedPercentage = Math.max(
+                      0,
+                      Math.min(100, progressPercentage)
+                    );
+
+                    movableProgress.style.width = `${clampedPercentage}%`;
+                    percentageText.textContent = `${Math.round(
+                      clampedPercentage
+                    )}%`;
+
+                    // Store the progress percentage in local storage
+                    localStorage.setItem(
+                      "progressPercentage",
+                      clampedPercentage
+                    );
+                  }
+                }
+
+                function stopDragging() {
+                  isDragging = false;
+                  movableProgress.style.transition = "width 0.3s ease-in-out"; // Add back the transition effect
+                  document.removeEventListener("mousemove", moveProgressBar);
+                  document.removeEventListener("mouseup", stopDragging);
+                }
+              </script>
+            </div>
+            <div class="flex gap-28">
+              <div class="flex gap-2">
+                <img src="./assets/images/Time Circle.svg" alt="clock" />
+                <p class="text-base font-medium text-[#141522]">1 Hour</p>
+              </div>
+              <div>
+                <img src="./assets/images/Student.png" alt="students" />
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-2">
+            <div class="flex flex-col gap-2">
+              <div>
+                <img src="./assets/images/arrowimage.png" alt="image" />
+              </div>
+              <div>
+                <h3 class="text-base font-semibold text-[#141522]">
+                  Creating Fresh Website
+                </h3>
+                <p class="text-xs font-medium text-[#54577A]">
+                  Web Developer
+                </p>
+              </div>
+            </div>
+            <div>
+              <div class="flex gap-40">
+                <h3 class="text-base font-medium text-[#141522]">Progress</h3>
+                <p class="percentage text-base font-medium text-blue-600"></p>
+              </div>
+
+              <div class="w-[275px] bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 relative">
+                <div id="movable-progress" class="bg-blue-600 h-2.5 rounded-full absolute left-0" style="width: 45%">
+                </div>
+              </div>
+              <script>
+                const movableProgress =
+                  document.getElementById("movable-progress");
+                const percentageText = document.querySelector(".percentage");
+
+                let isDragging = false;
+
+                // Retrieve the stored progress percentage from local storage, if available
+                const storedPercentage =
+                  localStorage.getItem("progressPercentage");
+                if (storedPercentage !== null) {
+                  movableProgress.style.width = `${storedPercentage}%`;
+                  percentageText.textContent = `${Math.round(
+                    storedPercentage
+                  )}%`;
+                }
+
+                movableProgress.addEventListener("mousedown", (e) => {
+                  isDragging = true;
+                  movableProgress.style.transition = "none";
+
+                  document.addEventListener("mousemove", moveProgressBar);
+                  document.addEventListener("mouseup", stopDragging);
+                });
+
+                function moveProgressBar(e) {
+                  if (isDragging) {
+                    const progressBarRect =
+                      movableProgress.parentElement.getBoundingClientRect();
+                    const mouseX = e.clientX - progressBarRect.left;
+                    const progressBarWidth = progressBarRect.width;
+
+                    const progressPercentage =
+                      (mouseX / progressBarWidth) * 100;
+
+                    // Clamp the progress percentage between 0% and 100%
+                    const clampedPercentage = Math.max(
+                      0,
+                      Math.min(100, progressPercentage)
+                    );
+
+                    movableProgress.style.width = `${clampedPercentage}%`;
+                    percentageText.textContent = `${Math.round(
+                      clampedPercentage
+                    )}%`;
+
+                    // Store the progress percentage in local storage
+                    localStorage.setItem(
+                      "progressPercentage",
+                      clampedPercentage
+                    );
+                  }
+                }
+
+                function stopDragging() {
+                  isDragging = false;
+                  movableProgress.style.transition = "width 0.3s ease-in-out"; // Add back the transition effect
+                  document.removeEventListener("mousemove", moveProgressBar);
+                  document.removeEventListener("mouseup", stopDragging);
+                }
+              </script>
+            </div>
+            <div class="flex gap-28">
+              <div class="flex gap-2">
+                <img src="./assets/images/Time Circle.svg" alt="clock" />
+                <p class="text-base font-medium text-[#141522]">1 Hour</p>
+              </div>
+              <div>
+                <img src="./assets/images/Student.png" alt="students" />
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-2">
+            <div class="flex flex-col gap-2">
+              <div>
+                <img src="./assets/images/arrowimage2.png" alt="image" />
+              </div>
+              <div>
+                <h3 class="text-base font-semibold text-[#141522]">
+                  Creating Color Palletes
+                </h3>
+                <p class="text-xs font-medium text-[#54577A]">UI UX Design</p>
+              </div>
+            </div>
+            <div>
+              <div class="flex gap-40">
+                <h3 class="text-base font-medium text-[#141522]">Progress</h3>
+                <p class="percentage text-base font-medium text-blue-600"></p>
+              </div>
+
+              <div class="w-[275px] bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 relative">
+                <div id="movable-progress" class="bg-blue-600 h-2.5 rounded-full absolute left-0" style="width: 45%">
+                </div>
+              </div>
+              <script>
+                const movableProgress =
+                  document.getElementById("movable-progress");
+                const percentageText = document.querySelector(".percentage");
+
+                let isDragging = false;
+
+                // Retrieve the stored progress percentage from local storage, if available
+                const storedPercentage =
+                  localStorage.getItem("progressPercentage");
+                if (storedPercentage !== null) {
+                  movableProgress.style.width = `${storedPercentage}%`;
+                  percentageText.textContent = `${Math.round(
+                    storedPercentage
+                  )}%`;
+                }
+
+                movableProgress.addEventListener("mousedown", (e) => {
+                  isDragging = true;
+                  movableProgress.style.transition = "none";
+
+                  document.addEventListener("mousemove", moveProgressBar);
+                  document.addEventListener("mouseup", stopDragging);
+                });
+
+                function moveProgressBar(e) {
+                  if (isDragging) {
+                    const progressBarRect =
+                      movableProgress.parentElement.getBoundingClientRect();
+                    const mouseX = e.clientX - progressBarRect.left;
+                    const progressBarWidth = progressBarRect.width;
+
+                    const progressPercentage =
+                      (mouseX / progressBarWidth) * 100;
+
+                    // Clamp the progress percentage between 0% and 100%
+                    const clampedPercentage = Math.max(
+                      0,
+                      Math.min(100, progressPercentage)
+                    );
+
+                    movableProgress.style.width = `${clampedPercentage}%`;
+                    percentageText.textContent = `${Math.round(
+                      clampedPercentage
+                    )}%`;
+
+                    // Store the progress percentage in local storage
+                    localStorage.setItem(
+                      "progressPercentage",
+                      clampedPercentage
+                    );
+                  }
+                }
+
+                function stopDragging() {
+                  isDragging = false;
+                  movableProgress.style.transition = "width 0.3s ease-in-out"; // Add back the transition effect
+                  document.removeEventListener("mousemove", moveProgressBar);
+                  document.removeEventListener("mouseup", stopDragging);
+                }
+              </script>
+              <div class="flex gap-28">
+                <div class="flex gap-2">
+                  <img src="./assets/images/Time Circle.svg" alt="clock" />
+                  <p class="text-base font-medium text-[#141522]">1 Hour</p>
+                </div>
+                <div>
+                  <img src="./assets/images/Student.png" alt="students" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="flex justify-between m-10">
+            <h2 class="text-2xl font-semibold text-[#141522]">New Task</h2>
+            <div class="flex gap-3">
+              <img src="./assets/images/arrow-left.svg" alt="icon" />
+              <img src="./assets/images/arrow-right.svg" alt="icon" />
+            </div>
+          </div>
+        </div>
+        <div class="flex gap-20 mx-10">
+          <div class="flex flex-col gap-2">
+            <div class="flex flex-col gap-2">
+              <div>
+                <img src="./assets/images/Image.png" alt="image" />
+              </div>
+              <div>
+                <h3 class="text-base font-semibold text-[#141522]">
+                  Creating Awesome Mobile Apps
+                </h3>
+                <p class="text-xs font-medium text-[#54577A]">UI UX Design</p>
+              </div>
+            </div>
+            <div>
+              <div class="flex gap-40">
+                <h3 class="text-base font-medium text-[#141522]">progress</h3>
+                <p class="percentage text-base font-medium text-blue-600"></p>
+              </div>
+
+              <div class="w-[275px] bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 relative">
+                <div id="movable-progress" class="bg-blue-600 h-2.5 rounded-full absolute left-0" style="width: 45%">
+                </div>
+              </div>
+            </div>
+            <div class="flex gap-28">
+              <div class="flex gap-2">
+                <img src="./assets/images/Time Circle.svg" alt="clock" />
+                <p class="text-base font-medium text-[#141522]">1 Hour</p>
+              </div>
+              <div>
+                <img src="./assets/images/Student.png" alt="students" />
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-2">
+            <div class="flex flex-col gap-2">
+              <div>
+                <img src="./assets/images/arrowimage.png" alt="image" />
+              </div>
+              <div>
+                <h3 class="text-base font-semibold text-[#141522]">
+                  Creating Fresh Website
+                </h3>
+                <p class="text-xs font-medium text-[#54577A]">Web Developer</p>
+              </div>
+            </div>
+            <div>
+              <div class="flex gap-40">
+                <h3 class="text-base font-medium text-[#141522]">progress</h3>
+                <p class="percentage text-base font-medium text-blue-600"></p>
+              </div>
+
+              <div class="w-[275px] bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 relative">
+                <div id="movable-progress" class="bg-blue-600 h-2.5 rounded-full absolute left-0" style="width: 45%">
+                </div>
+              </div>
+            </div>
+            <div class="flex gap-28">
+              <div class="flex gap-2">
+                <img src="./assets/images/Time Circle.svg" alt="clock" />
+                <p class="text-base font-medium text-[#141522]">1 Hour</p>
+              </div>
+              <div>
+                <img src="./assets/images/Student.png" alt="students" />
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-2">
+            <div class="flex flex-col gap-2">
+              <div>
+                <img src="./assets/images/arrowimage2.png" alt="image" />
+              </div>
+              <div>
+                <h3 class="text-base font-semibold text-[#141522]">
+                  Creating Color Palletes
+                </h3>
+                <p class="text-xs font-medium text-[#54577A]">UI UX Design</p>
+              </div>
+            </div>
+            <div>
+              <div class="flex gap-40">
+                <h3 class="text-base font-medium text-[#141522]">progress</h3>
+                <p class="percentage text-base font-medium text-blue-600"></p>
+              </div>
+
+              <div class="w-[275px] bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 relative">
+                <div id="movable-progress" class="bg-blue-600 h-2.5 rounded-full absolute left-0" style="width: 45%">
+                </div>
+              </div>
+            </div>
+            <div class="flex gap-28">
+              <div class="flex gap-2">
+                <img src="./assets/images/Time Circle.svg" alt="clock" />
+                <p class="text-base font-medium text-[#141522]">1 Hour</p>
+              </div>
+              <div>
+                <img src="./assets/images/Student.png" alt="students" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>

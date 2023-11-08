@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task Details</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="all.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <div class="hidden md:flex pr-5 w-full">
+    <div class="flex flex-rows-2 pt-6 w-full">
+      <div class="px-5 bg-white w-[222px] h-[1024px]">
+        <div class="flex gap-5 pb-12">
+          <div>
+            <img src="./assets/images/Vector.png" alt="Vector">
+          </div>
+          <div class="text-[#141522] text-3xl font-semibold cursor-pointer">
+            <h2>Nuegas</h2>
+          </div>
+        </div>
+        <div class="flex flex-col gap-6 pb-40">
+          <div class="flex gap-3 hover:bg-[#F5F5F7] w-[170px] h-[42px] pt-2 pl-3 rounded-lg">
+            <div>
+              <img src="./assets/images/1.svg" alt="1.svg">
+            </div>
+            <a href="http://127.0.0.1:5500/index.html">
+              <div class="text-[#8E92BC] hover:text-[#141522] text-sm font-semibold cursor-pointer">
+                <h2>Overview</h2>
+              </div>
+            </a>
+          </div>
+          <div class="flex gap-3 pl-3 hover:bg-[#F5F5F7] w-[170px] h-[42px] pt-2 pl-3 rounded-lg">
+            <div>
+              <img src="./assets/images/2.svg" alt="1.svg">
+            </div>
+            <a href="http://127.0.0.1:5500/pages/tast.html">
+              <div class="text-[#8E92BC] hover:text-[#141522] text-sm cursor-pointer">
+                <h2>Task</h2>
+              </div>
+            </a>
+          </div>
+          <div class="flex gap-3 pl-3 hover:bg-[#F5F5F7] w-[170px] h-[42px] pt-2 pl-3 rounded-lg">
+            <div>
+              <img src="./assets/images/3.svg" alt="1.svg">
+            </div>
+            <a href="http://127.0.0.1:5500/pages/mentors.html">
+              <div class="text-[#8E92BC] hover:text-[#141522] text-sm cursor-pointer">
+                <h2>Mentors</h2>
+              </div>
+            </a>
+          </div>
+          <div class="flex gap-3 pl-3 hover:bg-[#F5F5F7] w-[170px] h-[42px] pt-2 pl-3 rounded-lg">
+            <div>
+              <img src="./assets/images/4.svg" alt="1.svg">
+            </div>
+            <a href="http://127.0.0.1:5500/pages/messages.html">
+              <div class="text-[#8E92BC] hover:text-[#141522] text-sm cursor-pointer">
+                <h2>Message</h2>
+              </div>
+            </a>
+          </div>
+          <div class="flex gap-3 pl-3 hover:bg-[#F5F5F7] w-[170px] h-[42px] pt-2 pl-3 rounded-lg">
+            <div>
+              <img src="./assets/images/5.svg" alt="1.svg">
+            </div>
+            <div class="text-[#8E92BC] hover:text-[#141522] text-sm cursor-pointer">
+              <h2>Settings</h2>
+            </div>
+          </div>
+        </div>
+        <div class="cursor-pointer pt-60">
+          <img src="./assets/images/Help Center.png" alt="Help Center">
+        </div>
+      </div>
+      <div>
+        <div class="flex justify-between mx-10 pt-5">
+          <h1 class="text-2xl font-semibold text-[#141522]">Explore Task</h1>
+          <div class="flex gap-5">
+            <img src="./assets/images/notif.png" alt="Notification" />
+            <img src="./assets/images/Profil.png" alt="profile" />
+          </div>
+        </div>
+        <div class="flex justify-between mx-10 my-5">
+          <div class="flex justify-between relative w-96 border-2 border-solid border-[#F5F5F7] rounded-xl">
+            <input type="text" id="voice-search" class="text-[#54577A] text-sm rounded-lg p-3" placeholder="Search Task"
+              required />
+            <img class="mr-5" src="./assets/images/search-normal.svg" alt="">
+          </div>
+          <div class="flex gap-5">
+            <div
+              class="border-2 border-solid border-[#F5F5F7] rounded-xl w-32 flex gap-2 justify-center py-2 items-center">
+              <img src="./assets/images/category-2.svg" alt="Category" />
+              <p class="text-xs font-semibold">Category</p>
+            </div>
+            <div
+              class="border-2 border-solid border-[#F5F5F7] rounded-xl w-44 flex gap-2 justify-center py-2 items-center">
+              <img src="./assets/images/sort.svg" alt="sort" />
+              <p class="text-xs font-semibold">Sort By : Deadline</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-[#F5F5F7] p-5 mt-10 grid grid-cols-3 gap-5">
+          <div class="col-span-2 bg-white">
+            <div class="">
+              <img src="./assets/images/VideoTask.png" alt="" class="w-full" />
+            </div>
+            <div class="px-5">
+              <div class="mt-10 mb-5">
+                <h1 class="font-semibold text-3xl text-[#141522]">
+                  Creating Awesome Mobile Apps
+                </h1>
+              </div>
+              <div class="flex py-3 gap-2">
+                <div class="">
+                  <p class="text-sm text-[#54577A] font-medium">
+                    UI UX Design . Apps Design
+                  </p>
+                </div>
+                <div class="">
+                  <p class="font-medium text-sm text-[#04A4F4]">
+                    + Get Mentors
+                  </p>
+                </div>
+              </div>
+              <div class="py-3">
+                <img src="./assets/images/info.png" alt="" />
+              </div>
+              <div class="">
+                <h1 class="font-semibold text-2xl py-5">Description</h1>
+              </div>
+              <div class="">
+                <p class="text-sm font-normal text-[#141522]">
+                  Follow the video tutorial above. Understand how to use each
+                  tool in the Figma application. Also learn how to make a good
+                  and correct design. Starting from spacing, typography,
+                  content, and many other design hierarchies. Then try to make
+                  it yourself with your imagination and inspiration.
+                </p>
+              </div>
+              <div class="">
+                <h1 class="font-semibold text-2xl text-[#141522] py-5">
+                  Essence of Assessment
+                </h1>
+              </div>
+              <div class="">
+                <div class="flex gap-2 py-3">
+                  <div>
+                    <img src="./assets/images/tick-circle.png" alt="" />
+                  </div>
+                  <div>
+                    <p class="text-sm font-normal text-[#141522]">
+                      Understanding the tools in Figma
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex gap-2 py-3">
+                  <div>
+                    <img src="./assets/images/tick-circle.png" alt="" />
+                  </div>
+                  <div>
+                    <p class="text-sm font-normal text-[#141522]">
+                      Understand the basics of making designs
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex gap-2 py-3">
+                  <div>
+                    <img src="./assets/images/tick-circle.png" alt="" />
+                  </div>
+                  <div>
+                    <p class="text-sm font-normal text-[#141522]">
+                      Designing a mobile application using figma
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex gap-2 py-3">
+                  <div>
+                    <img src="./assets/images/tick-circle.png" alt="" />
+                  </div>
+                  <div>
+                    <p class="text-sm font-normal text-[#141522]">
+                      Presenting the design flow
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white p-5">
+            <div class="py-5">
+              <p class="text-sm font-semibold">Assigned Assignments</p>
+            </div>
+            <div class="py-5">
+              <h1 class="text-2xl font-semibold">
+                Creating Awesome Mobile Apps
+              </h1>
+            </div>
+            <div class="pb-10">
+              <p class="text-sm text-[#54577A]">UI UX Design . Apps Design</p>
+            </div>
+            <div class="">
+              <h1 class="text-xl font-semibold">Detail Student</h1>
+            </div>
+            <div class="">
+              <div class="flex justify-between py-3">
+                <div class="">
+                  <p class="text-sm text-[#54577A]">Student's name</p>
+                </div>
+                <div class="">
+                  <h1 class="text-sm font-semibold">Skylar Dias</h1>
+                </div>
+              </div>
+              <div class="flex justify-between py-3">
+                <div class="">
+                  <p class="text-sm text-[#54577A]">Student Class</p>
+                </div>
+                <div class="">
+                  <h1 class="text-sm font-semibold">MIPA 2</h1>
+                </div>
+              </div>
+              <div class="flex justify-between py-3">
+                <div class="">
+                  <p class="text-sm text-[#54577A]">Student Number</p>
+                </div>
+                <div class="">
+                  <h1 class="text-sm font-semibold">10</h1>
+                </div>
+              </div>
+            </div>
+            <div class="py-3">
+              <h1 class="text-xl font-semibold">File Task</h1>
+            </div>
+
+            <div class="flex justify-between">
+              <div class="">
+                <p class="text-sm text-[#54577A]">Student's name</p>
+              </div>
+              <div class="">
+                <h1 class="text-sm font-semibold">Skylar Dias</h1>
+              </div>
+            </div>
+
+            <div class="py-5">
+              <img src="./assets/images/FileSubmisiion.png" alt="" />
+            </div>
+            <div class="pt-20">
+              <button class="bg-[#546FFF] w-full py-2 rounded-lg">
+                <p class="text-white text-sm">Submit</p>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="sm:hidden p-5">
+    <div class="flex justify-between">
+      <div class="flex justify-center">
+        <img src="./assets/images/menu.svg" class="" />
+      </div>
+      <div class="flex gap-5">
+        <div class="">
+          <img src="./assets/images/notif.png" class="" />
+        </div>
+        <div class="">
+          <img src="./assets/images/Profil.png" class="" />
+        </div>
+      </div>
+    </div>
+    <div>
+      <div>
+        <h1 class="font-semibold text-2xl mt-5">Explore Task</h1>
+      </div>
+    </div>
+
+    <div class="flex justify-between px-2 py-5 gap-10">
+      <div class="w-3/4 border-2 border-[#F5F5F7]-600 p-3 rounded-lg flex justify-between">
+        <div>
+          <p class="">Search Mentors</p>
+        </div>
+        <div>
+          <img src="./assets/images/search-normal.svg" class="" />
+        </div>
+      </div>
+      <div class="w-1/5 border-2 border-[#F5F5F7]-600 p-3 rounded-lg flex justify-center">
+        <div>
+          <img src="./assets/images/setting-4.svg" class="" />
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="bg-[#F5F5F7] p-5 mt-10">
+        <div class="parent">
+          <div class="col-span-2 bg-white">
+            <div class="">
+              <img src="./assets/images/VideoTask.png" alt="" class="w-full" />
+            </div>
+            <div class="px-5">
+              <div class="mt-10 mb-5">
+                <h1 class="font-semibold text-3xl text-[#141522]">
+                  Creating Awesome Mobile Apps
+                </h1>
+              </div>
+              <div class="flex py-3 gap-2">
+                <div class="">
+                  <p class="text-sm text-[#54577A] font-medium">
+                    UI UX Design . Apps Design
+                  </p>
+                </div>
+                <div class="">
+                  <p class="font-medium text-sm text-[#04A4F4]">
+                    + Get Mentors
+                  </p>
+                </div>
+              </div>
+              <div class="py-3">
+                <img src="./assets/images/info.png" alt="" />
+              </div>
+              <div class="">
+                <h1 class="font-semibold text-2xl py-5">Description</h1>
+              </div>
+              <div class="">
+                <p class="text-sm font-normal text-[#141522]">
+                  Follow the video tutorial above. Understand how to use each
+                  tool in the Figma application. Also learn how to make a good
+                  and correct design. Starting from spacing, typography,
+                  content, and many other design hierarchies. Then try to make
+                  it yourself with your imagination and inspiration.
+                </p>
+              </div>
+              <div class="">
+                <h1 class="font-semibold text-2xl text-[#141522] py-5">
+                  Essence of Assessment
+                </h1>
+              </div>
+              <div class="">
+                <div class="flex gap-2 py-3">
+                  <div>
+                    <img src="./assets/images/tick-circle.png" alt="" />
+                  </div>
+                  <div>
+                    <p class="text-sm font-normal text-[#141522]">
+                      Understanding the tools in Figma
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex gap-2 py-3">
+                  <div>
+                    <img src="./assets/images/tick-circle.png" alt="" />
+                  </div>
+                  <div>
+                    <p class="text-sm font-normal text-[#141522]">
+                      Understand the basics of making designs
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex gap-2 py-3">
+                  <div>
+                    <img src="./assets/images/tick-circle.png" alt="" />
+                  </div>
+                  <div>
+                    <p class="text-sm font-normal text-[#141522]">
+                      Designing a mobile application using figma
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex gap-2 py-3">
+                  <div>
+                    <img src="./assets/images/tick-circle.png" alt="" />
+                  </div>
+                  <div>
+                    <p class="text-sm font-normal text-[#141522]">
+                      Presenting the design flow
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="parent mt-10">
+          <div class="bg-white p-5">
+            <div class="py-5">
+              <p class="text-sm font-semibold">Assigned Assignments</p>
+            </div>
+            <div class="py-5">
+              <h1 class="text-2xl font-semibold">
+                Creating Awesome Mobile Apps
+              </h1>
+            </div>
+            <div class="pb-10">
+              <p class="text-sm text-[#54577A]">UI UX Design . Apps Design</p>
+            </div>
+            <div class="">
+              <h1 class="text-xl font-semibold">Detail Student</h1>
+            </div>
+            <div class="">
+              <div class="flex justify-between py-3">
+                <div class="">
+                  <p class="text-sm text-[#54577A]">Student's name</p>
+                </div>
+                <div class="">
+                  <h1 class="text-sm font-semibold">Skylar Dias</h1>
+                </div>
+              </div>
+              <div class="flex justify-between py-3">
+                <div class="">
+                  <p class="text-sm text-[#54577A]">Student Class</p>
+                </div>
+                <div class="">
+                  <h1 class="text-sm font-semibold">MIPA 2</h1>
+                </div>
+              </div>
+              <div class="flex justify-between py-3">
+                <div class="">
+                  <p class="text-sm text-[#54577A]">Student Number</p>
+                </div>
+                <div class="">
+                  <h1 class="text-sm font-semibold">10</h1>
+                </div>
+              </div>
+            </div>
+            <div class="py-3">
+              <h1 class="text-xl font-semibold">File Task</h1>
+            </div>
+
+            <div class="flex justify-between">
+              <div class="">
+                <p class="text-sm text-[#54577A]">Student's name</p>
+              </div>
+              <div class="">
+                <h1 class="text-sm font-semibold">Skylar Dias</h1>
+              </div>
+            </div>
+
+            <div class="py-5">
+              <img src="./assets/images/FileSubmisiion.png" alt="" />
+            </div>
+            <div class="pt-20">
+              <button class="bg-[#546FFF] w-full py-2 rounded-lg">
+                <p class="text-white text-sm">Submit</p>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
